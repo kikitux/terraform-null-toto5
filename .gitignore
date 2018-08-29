@@ -1,0 +1,4 @@
+.terraform/
+priv/
+errored.tfstate
+terraform.tfstate*

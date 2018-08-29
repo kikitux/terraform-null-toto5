@@ -1,9 +1,15 @@
-resource "random_integer" "4islo" {
+terraform {
+  backend "atlas" {
+    name = "kikitux/toto5"
+  }
+}
+
+resource "random_integer" "toto5" {
   min   = 1
   max   = 35
   count = 5
 }
 
-output "4isla" {
-  value = ["${random_integer.4islo.*.result}"]
+output "toto5" {
+  value = ["${random_integer.toto5.*.result}"]
 }
